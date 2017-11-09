@@ -20,7 +20,7 @@ class BaseModel (peewee.Model):
 class Author (BaseModel):
   name = peewee.CharField(max_length=60)
   twitter = peewee.CharField(max_length=60)
-  
+
   def __str__ (self):
     return self.name
     
